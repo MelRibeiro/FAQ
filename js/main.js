@@ -6,3 +6,8 @@ for ( const summary of summaries) {
   })
 }
 
+// const animationIconArrow = document.querySelectorAll(".details__icon-arrow");
+
+// animationIconArrow.addEventListener("click", () => {
+//   animationIconArrow.classList.toggle(".animation")
+// })

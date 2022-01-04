@@ -3,7 +3,6 @@ My <a href="">solution</a> to the FrontEnd Mentor challenge
 
 
 
-
 ## Desktop 🖥
 ![desktop photo](readme/desktop.gif)
 

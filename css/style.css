@@ -29,12 +29,28 @@
 }
 
 body {
-  background:linear-gradient(var(--gradient-soft-violet), var(--gradient-soft-blue));
+  background:linear-gradient(45deg, var(--gradient-soft-violet), var(--gradient-soft-blue), var(--dividers-light-grayish-blue));
+  background-size: 300% 300%;
+  animation: colors 15s ease infinite;
   color: var(--text-dark-grayish-blue);
   width: 100vw;
   height: 100vh;
   font-family: var(--font-family);
   font-size: var(--font-size);
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 hr {
@@ -114,6 +130,25 @@ details > summary {
   height: 3.125rem;
 }
 
+.details__icon-arrow {
+  padding: 0.3rem;
+}
+
+.details__icon-arrow:hover{
+  animation: iconArrow .4s ease;
+  animation-fill-mode: forwards;
+} 
+
+@keyframes iconArrow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
 .details__summary.bold {
   font-weight: bold;
 }
@@ -161,7 +196,6 @@ summary.bold {
     left: -60px;
     bottom: -40px;
   }
-
 
   .container {
     display: flex;
